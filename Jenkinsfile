@@ -4,7 +4,7 @@ pipeline {
         stage("Compile") {
             steps {
                 script {
-                    sh '''
+                    
                     echo '[INFO] Starting compilation'
                     mvn clean compile
                     '''
@@ -14,7 +14,7 @@ pipeline {
         stage("Test") {
             steps {
                 script {
-                    sh '''
+                   
                     echo '[INFO] Starting build'
                     mvn clean test
                     '''
@@ -24,7 +24,7 @@ pipeline {
         stage("deploy") {
             steps {
                 script {
-                    sh '''
+                   
                     echo '[INFO] Starting upload to artifactory'
                     mvn clean install
                     '''
