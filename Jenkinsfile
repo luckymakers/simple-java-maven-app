@@ -7,7 +7,7 @@ pipeline {
                     
                     echo '[INFO] Starting compilation'
                     mvn clean compile
-                    '''
+                 
                 }
             }
         }
@@ -17,7 +17,7 @@ pipeline {
                    
                     echo '[INFO] Starting build'
                     mvn clean test
-                    '''
+               
                 }
             }
         }
@@ -27,7 +27,7 @@ pipeline {
                    
                     echo '[INFO] Starting upload to artifactory'
                     mvn clean install
-                    '''
+                   
                 }
             }
         }
